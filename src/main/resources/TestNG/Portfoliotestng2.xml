@@ -1,0 +1,65 @@
+<suite name="Portfolio module">
+
+	<parameter name="browserName" value="chrome" />
+	<parameter name="environment" value="QAS" />
+    <parameter name="moduleName" value="Common"/>
+    
+
+ <test name="WELL-At-Scale-V2-Pilot-CustomUpload">
+		<parameter name="SheetName" value="Custom_Portfolio" />
+		<parameter name="rowNum" value="4" />
+		<parameter name="Country" value="US"/>
+		<parameter name="API" value="true"/>
+		<parameter name="ProjectType" value="v2-pilot"/>
+		<parameter name="Engagement_level" value="enterprise"/>
+		<parameter name="Upload" value="true"/>
+		<parameter name="Commodity" value="Portfolio"/>
+		<parameter name="ImportLocation" value="CustomUploadV2Pilot"/>
+		<parameter name="ProjectName" value="Automation V2PilotCustomUpload Portfolio"/>
+		 <classes>
+		 <class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_02_RegisterPortfolioTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_03_SearchPortfolioByIdTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_04_SignAndSubscribePortfolioTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05_PortfolioPaymentTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05A_PortfolioValidateBillingReceiptTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_06_PortfolioLocationImportTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_CTC_03_ScorecardUploadTest"></class>  
+		<class name="com.Well.testcases.Portfolio.Portfolio_CTC_04_DocumentUploadTest"></class>  
+		<class name="com.Well.testcases.Portfolio.Portfolio_CTC_05_ReviewTest"></class> 
+		 <class name="com.Well.testcases.Portfolio.Portfolio_CTC_06_ScorecardUploadForAddedLocationTest"></class> 
+		 <class name="com.Well.testcases.Portfolio.Portfolio_CTC_07_DocumentUploadForAddedLocationTest"></class>  
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_16_ErrorNegativeAssertTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_17_FieldNegativeAssertTest"></class>  
+		</classes>  
+       </test> 
+	
+	
+<!-- 	<test name="WELL-At-Scale_V2_Performance Testing Team Access">
+		<parameter name="SheetName" value="Portfolio" />
+		<parameter name="rowNum" value="7" />
+		<parameter name="Country" value="US"/>
+		<parameter name="ProjectType" value="v2"/>
+		<parameter name="Engagement_level" value="enterprise"/>
+		<parameter name="Upload" value="false"/>
+		<parameter name="API" value="true"/>
+		<parameter name="Commodity" value="Portfolio"/>
+		<parameter name="ImportLocation" value="Common"/>
+		<parameter name="ProjectName" value="Automation V2 Portfolio Team Access"/>
+		 <classes>
+		 <class name="com.Well.testcases.login.TC_01_LoginTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_02_RegisterPortfolioTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_03_SearchPortfolioByIdTest"></class>
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_04_SignAndSubscribePortfolioTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05_PortfolioPaymentTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_05A_PortfolioValidateBillingReceiptTest"></class> 
+		<class name="com.Well.testcases.Portfolio.Portfolio_TC_06_PortfolioLocationImportTest"></class> 
+	    <class name="com.Well.testcases.Portfolio.Portfolio_TC_08A_DocumentTest"></class>	
+	    <class name="com.Well.testcases.Portfolio.Portfolio_TC_13B_AddingTeamTest"></class>	
+	   <class name="com.Well.testcases.Portfolio.Portfolio_TC_22_ValidateTeamPTAccessTest"></class>	
+	   <class name="com.Well.testcases.Portfolio.Portfolio_TC_17_FieldNegativeAssertTest"></class>	
+		 </classes>
+	</test>  -->
+	
+	
+</suite>  
